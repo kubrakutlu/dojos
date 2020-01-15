@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include<vector>
 
 int equi(int inputArr[], int arrayLen)
 {

@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
-#include<vector>
+#include <vector>
+
+using namespace std;
 
 int equi(int inputArr[], int arrayLen)
 {
@@ -58,4 +60,14 @@ TEST(EquiTest, TwoEquilibrium)
     int equiIndex = equi(inputArr, arrayLen);
     int expectedEquiIndex = 1;
     ASSERT_EQ(expectedEquiIndex, equiIndex);
+}
+
+int main()
+{
+    const int arrayLen=0;
+    int inputArr[arrayLen] = {};
+    //int arrayLen = sizeof(inputArr) / sizeof(inputArr[0]);
+    int equiIndex = equi(inputArr, arrayLen);
+    cout << equiIndex;
+    return 0;
 }
